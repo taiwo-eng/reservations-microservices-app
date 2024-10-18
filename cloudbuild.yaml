@@ -1,5 +1,5 @@
 steps:
-  # Reservations Microservice
+  # Reservations
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'build',
@@ -11,7 +11,7 @@ steps:
     ]
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production']
-  # Auth Microservice
+  # Auth
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'build',
@@ -23,7 +23,7 @@ steps:
     ]
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production']
-  # Payments Microservice
+  # Payments
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'build',
@@ -35,7 +35,7 @@ steps:
     ]
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production']
-  # Notifications Microservice
+  # Notifications
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'build',
