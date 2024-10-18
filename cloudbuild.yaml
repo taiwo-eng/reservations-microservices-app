@@ -1,31 +1,31 @@
 steps:
   # Reservations
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production', '-f', 'apps/reservations/Dockerfile', '.']
-    options:
-      defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
-    
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production', '-f', 'apps/reservations/Dockerfile', '.']
+options:
+    logging: CLOUD_LOGGING_ONLY
+  
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production']
 
-  # Auth
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production', '-f', 'apps/auth/Dockerfile', '.']
+# Auth
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production', '-f', 'apps/auth/Dockerfile', '.']
 
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production']
 
-  # Payments
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production', '-f', 'apps/payments/Dockerfile', '.']
+# Payments
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production', '-f', 'apps/payments/Dockerfile', '.']
 
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production']
 
-  # Notifications
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/notifications/production', '-f', 'apps/notifications/Dockerfile', '.']
+# Notifications
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/notifications/production', '-f', 'apps/notifications/Dockerfile', '.']
 
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/notifications/production']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/notifications/production']
     
