@@ -1,29 +1,37 @@
 steps:
   # Reservations
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production', '-f', 'apps/reservations/Dockerfile', '.']
+options:
+  logging: CLOUD_LOGGING_ONLY
+args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production', '-f', 'apps/reservations/Dockerfile', '.']
   
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production']
+args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production']
 
 # Auth
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production', '-f', 'apps/auth/Dockerfile', '.']
+options:
+  logging: CLOUD_LOGGING_ONLY
+args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production', '-f', 'apps/auth/Dockerfile', '.']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production']
+args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production']
 
 # Payments
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production', '-f', 'apps/payments/Dockerfile', '.']
+options:
+  logging: CLOUD_LOGGING_ONLY
+args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production', '-f', 'apps/payments/Dockerfile', '.']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production']
+args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production']
 
 # Notifications
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/notifications/production', '-f', 'apps/notifications/Dockerfile', '.']
+options:
+  logging: CLOUD_LOGGING_ONLY
+args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/notifications/production', '-f', 'apps/notifications/Dockerfile', '.']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/notifications/production']
+args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/notifications/production']
     
