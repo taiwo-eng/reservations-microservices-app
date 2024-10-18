@@ -2,8 +2,6 @@ steps:
   # Reservations
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production', '-f', 'apps/reservations/Dockerfile', '.']
-options:
-    logging: CLOUD_LOGGING_ONLY
   
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production']
