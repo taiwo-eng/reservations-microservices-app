@@ -9,6 +9,8 @@ steps:
       'apps/reservations/Dockerfile',
       '.'
     ]
+  options:
+      logging: CLOUD_LOGGING_ONLY
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/reservations/production']
   # Auth
@@ -21,6 +23,8 @@ steps:
       'apps/auth/Dockerfile',
       '.'
     ]
+  options:
+      logging: CLOUD_LOGGING_ONLY
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/auth/production']
   # Payments
@@ -33,6 +37,8 @@ steps:
       'apps/payments/Dockerfile',
       '.'
     ]
+  options:
+      logging: CLOUD_LOGGING_ONLY
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/payments/production']
   # Notifications
@@ -45,6 +51,8 @@ steps:
       'apps/notifications/Dockerfile',
       '.'
     ]
+  options:
+      logging: CLOUD_LOGGING_ONLY
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'europe-west2-docker.pkg.dev/future-cabinet-439009-i0/notifications/production']
     
