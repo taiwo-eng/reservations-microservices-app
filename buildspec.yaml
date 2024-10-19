@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - aws ecr get-login-password --region us-east-1 --profile AdministratorAccess-869148443843 | docker login --username AWS --password-stdin 869148443843.dkr.ecr.us-east-1.amazonaws.com
+  build:
+    commands:
+      - docker build -t landwaterbnb/reservations -f ./apps/reservations/Dockerfile .
+      - docker tag landwaterbnb/reservations:latest 869148443843.dkr.ecr.us-east-1.amazonaws.com/landwaterbnb/reservations:latest
+
+      - docker build -t landwaterbnb/auth -f ./apps/auth/Dockerfile .
+      - docker tag landwaterbnb/auth:latest 869148443843.dkr.ecr.us-east-1.amazonaws.com/landwaterbnb/auth:latest
+
+      - docker build -t landwaterbnb/payments -f ./apps/payments/Dockerfile .
+      - docker tag landwaterbnb/payments:latest 869148443843.dkr.ecr.us-east-1.amazonaws.com/landwaterbnb/payments:latest
+
+      - docker build -t landwaterbnb/notifications -f ./apps/notifications/Dockerfile .
+      - docker tag landwaterbnb/notifications:latest 869148443843.dkr.ecr.us-east-1.amazonaws.com/landwaterbnb/notifications:latest
+  post_build:
+    commands:
+      - docker push 869148443843.dkr.ecr.us-east-1.amazonaws.com/landwaterbnb/reservations:latest
+      - docker push 869148443843.dkr.ecr.us-east-1.amazonaws.com/landwaterbnb/auth:latest
+      - docker push 869148443843.dkr.ecr.us-east-1.amazonaws.com/landwaterbnb/payments:latest
+      - docker push 869148443843.dkr.ecr.us-east-1.amazonaws.com/landwaterbnb/notifications:latest
