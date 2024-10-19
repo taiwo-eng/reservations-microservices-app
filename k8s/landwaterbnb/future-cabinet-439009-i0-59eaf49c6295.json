@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "future-cabinet-439009-i0",
+  "private_key_id": "59eaf49c62956aca139736a90e2d240c2919ae20",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC4K1h6G3vZTySR\numazJ9dOOFi63BAgauqF5I0hIs1WBy5ASH30v8DWQ8bGSgxbyTW8m//grMveMx/0\nO+bChBhQqDTPXNlXDgzA22y98ZrFbU66zDeRYVEVecbopsop/n/I5N5fszJcQ1DL\nBkzIx2fcJroGH6AFI2P1ZED6V1f5kqB1myIWHon0JwuigQOX3BsEaNs66HXHzdUJ\nLqQcMSno5U9T5pawNUNllEY/71HUDHlH+/GI24wDt9SaCqgWpXuu0Me49lgG9dL/\niZaXvVmguDB+p2o4fKyyul7NViYI5tvh3aruG6xaw9u71F8+jwglDepYT0NWaais\nNS4DtpFzAgMBAAECggEAAx16trYJXbixyJdiB/7RDtWmwgjIe/tbhT4hO2PagqCs\n/94o+JbX4C5V1qqpcclXXGqwsZR2ZcuBuDG7MPk8oA1vyE7w8nQEyRKXv7/QUMce\nJYgPTeTjgfRrf5Ayq79wa37TjbLY7VtkAA9nwNHtlN+4J2cpikqTfXcbUkLXa/mE\npghtFmIOowVwtzO+afGNtoyJASCEt0P3iibad91MpPPT4dY6cnQeziQJYjdWYL/Z\nBBDgsCP9MNEpmYTx6E9coEizc/HmqXD0dyAMHLTWNOJ8UaP8gkkR2fWpK2clmAA8\nFE3tBjInX2u/M8GxKFcPPbauLRyzTmzLqVTBU5GoYQKBgQDqwq/Glf4IllsacF1b\nsgAqZ6ObQQ78grtONXIYaYdtXyjg4f88UuPo041Xmt59tvetPAQh01fjZfHa4PbW\nJfD6eae28htOk3zK6A5pZAMJYmW0NQCIj9+65OIfvDo5+dGDJmSZOeLa2YDLm12n\n93Dn/9PASRlbC+Vjc9p+T9LknQKBgQDI1OlIMTDGJtjP6nlQXlKgtzl/k6PHaCPc\nbj/hx2iWZA++u+5+HB/bveUr5GQi26iuUnlkcV7VI6pSJwfxnKjFxQT6Jl2rAvzf\nDxxUkG/tESUwwgmYV9I+ZBitq5voUH5D6n2BFEvaz05XvTtin+5+3beCyWOBV3y0\n3xYGB1KJTwKBgQDT1NjHWJDhLssGEF4tX3DG0r3OWeYr88sPxyos3QxWpIc+ZK7q\nv+DnNf1UD2q0BWV366/O1eV4S4Tw/A2/Ln1DhoLPkacSQANbFAntD1GuJhufgDP7\nBdfbzKw99pqTtdhXf01G9fS9hYWyM39PEPfQYAeyekNm5FUYaHG/iEfEAQKBgQCt\n73h7hd7wPwTYTgLzkD2P5CBwVbYrJg6pAvNg4Au89LyOPMW5gzI0Zqrs8MmpRwU4\ntUVdsLKpdlI1BIjkwQGLB6/f1wqY6eWIatXmh5HoiEjliag1wRnd32NgRpipA83X\nlGdOO/3WbGU1qDaenFU6m1wsca80fkkLfYrdfcoGEQKBgQCi4f5Tb9zLsN+IkzIL\nUhGxCdMkp4il2VlTSvhGYwnZzmZa13TL0RskemUU1w/ff0NnjpME1nuz6oHDznoE\nyBqvn/djQdPKKg2EB7m5cSosm5/LafEliKSQcAZ85R2OHgun4I68V7CNebHCDnJn\nq5CtxnWfIFliFqiv7dec02ZNmA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "artifact-image-pull@future-cabinet-439009-i0.iam.gserviceaccount.com",
+  "client_id": "109061398478863452570",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/artifact-image-pull%40future-cabinet-439009-i0.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
