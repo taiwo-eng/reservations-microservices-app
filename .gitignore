@@ -128,3 +128,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# k8s ignore
+k8s/landwaterbnb/future-cabinet-439009-i0-59eaf49c6295.json
