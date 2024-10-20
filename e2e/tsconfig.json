@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "ES6",
+      "sourceMap": true,
+      "outDir": "./dist",
+      "baseUrl": "./",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "noImplicitAny": false,
+      "moduleResolution": "Node10"
+    },
+    "include": ["specs/**/*"]
+  }
