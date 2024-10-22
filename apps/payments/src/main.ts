@@ -19,5 +19,6 @@ async function bootstrap() {
   });
   app.useLogger(app.get(Logger));
   app.startAllMicroservices();
+  app.listen(configService.getOrThrow('PORT_HTTP'));
 }
 bootstrap();
