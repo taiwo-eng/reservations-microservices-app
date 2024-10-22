@@ -21,7 +21,7 @@ describe('Health', () => {
   });
 
   test('Notifications', (done) => {
-    ping({ address: 'payments', port: 3003 }, (err) => {
+    ping({ address: 'notifications', port: 3004 }, (err) => {
       if (err) {
         fail();
       }
